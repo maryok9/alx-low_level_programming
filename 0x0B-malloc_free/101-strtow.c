@@ -32,7 +32,7 @@ int num_words(char *str)
 		{
 			i++;
 		}
-		else
+		else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
 		{
 			words += 1;
 			i++;
